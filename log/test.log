@@ -1,0 +1,236 @@
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 21:57:31) [GET]
+Rendering home/index
+Completed in 29ms (View: 27, DB: 0) | 200 OK [http://test.host/home]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 21:59:33) [GET]
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/home]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:00:10) [GET]
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/home]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:02:05) [GET]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:07:28) [GET]
+Rendering home/index
+Completed in 56ms (View: 1, DB: 0) | 200 OK [http://test.host/home]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:07:58) [GET]
+Rendering home/index
+Completed in 55ms (View: 2, DB: 0) | 200 OK [http://test.host/home]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:08:34) [GET]
+Rendering home/index
+Completed in 54ms (View: 2, DB: 0) | 200 OK [http://test.host/home]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:09:23) [GET]
+Rendering home/index
+Completed in 53ms (View: 1, DB: 0) | 200 OK [http://test.host/home]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:11:04) [GET]
+Rendering home/index
+Completed in 53ms (View: 2, DB: 0) | 200 OK [http://test.host/home]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:11:30) [GET]
+Rendering home/index
+Completed in 53ms (View: 2, DB: 0) | 200 OK [http://test.host/home]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:11:50) [GET]
+Rendering home/index
+Completed in 53ms (View: 1, DB: 0) | 200 OK [http://test.host/home]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:13:00) [GET]
+Rendering home/index
+Completed in 53ms (View: 2, DB: 0) | 200 OK [http://test.host/home]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:17:39) [GET]
+Rendering home/index
+Completed in 2767ms (View: 1, DB: 0) | 200 OK [http://test.host/home]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:18:24) [GET]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:18:41) [GET]
+Rendering home/index
+Completed in 2056ms (View: 2, DB: 0) | 200 OK [http://test.host/home]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:19:16) [GET]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:19:33) [GET]
+Rendering home/index
+Completed in 2056ms (View: 1, DB: 0) | 200 OK [http://test.host/home]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:20:15) [GET]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:20:46) [GET]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:21:01) [GET]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:22:33) [GET]
+Rendering home/index
+Completed in 52ms (View: 1, DB: 0) | 200 OK [http://test.host/home]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:22:43) [GET]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:22:59) [GET]
+Rendering home/index
+Completed in 52ms (View: 1, DB: 0) | 200 OK [http://test.host/home]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:23:08) [GET]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:23:23) [GET]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:24:04) [GET]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:24:56) [GET]
+Rendering home/index
+Completed in 2609ms (View: 1, DB: 0) | 200 OK [http://test.host/home]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:25:11) [GET]
+Rendering home/index
+Completed in 2057ms (View: 2, DB: 0) | 200 OK [http://test.host/home]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:25:40) [GET]
+Rendering home/index
+Completed in 2062ms (View: 1, DB: 0) | 200 OK [http://test.host/home]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:26:30) [GET]
+Rendering home/index
+Completed in 52ms (View: 1, DB: 0) | 200 OK [http://test.host/home]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:26:47) [GET]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:29:31) [GET]
+Rendering home/index
+Completed in 60ms (View: 1, DB: 0) | 200 OK [http://test.host/home]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:29:45) [GET]
+Rendering home/index
+Completed in 67ms (View: 1, DB: 0) | 200 OK [http://test.host/home]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:34:20) [GET]
+Rendering home/index
+Completed in 61ms (View: 1, DB: 0) | 200 OK [http://test.host/home]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:36:34) [GET]
+Rendering home/index
+Completed in 63ms (View: 2, DB: 0) | 200 OK [http://test.host/home]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:42:52) [GET]
+Rendering home/index
+Completed in 61ms (View: 1, DB: 0) | 200 OK [http://test.host/home]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:49:24) [GET]
+Rendering home/index
+Completed in 61ms (View: 1, DB: 0) | 200 OK [http://test.host/home]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:49:42) [GET]
+Rendering home/index
+Completed in 62ms (View: 1, DB: 0) | 200 OK [http://test.host/home]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:49:58) [GET]
+Rendering home/index
+Completed in 62ms (View: 1, DB: 0) | 200 OK [http://test.host/home]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:51:47) [GET]
+Rendering home/index
+Completed in 62ms (View: 1, DB: 0) | 200 OK [http://test.host/home]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:52:09) [GET]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:52:27) [GET]
+Rendering home/index
+Completed in 63ms (View: 1, DB: 0) | 200 OK [http://test.host/home]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:52:45) [GET]
+Rendering home/index
+Completed in 61ms (View: 1, DB: 0) | 200 OK [http://test.host/home]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:53:00) [GET]
+Rendering home/index
+Completed in 62ms (View: 2, DB: 0) | 200 OK [http://test.host/home]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:53:22) [GET]
+Rendering home/index
+Completed in 61ms (View: 1, DB: 0) | 200 OK [http://test.host/home]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:53:46) [GET]
+Rendering home/index
+Completed in 62ms (View: 2, DB: 0) | 200 OK [http://test.host/home]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:54:39) [GET]
+Rendering home/index
+Completed in 61ms (View: 2, DB: 0) | 200 OK [http://test.host/home]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:55:44) [GET]
+Rendering home/index
+Completed in 61ms (View: 2, DB: 0) | 200 OK [http://test.host/home]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:57:03) [GET]
+Rendering home/index
+Completed in 69ms (View: 1, DB: 0) | 200 OK [http://test.host/home]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:58:31) [GET]
+Rendering home/index
+Completed in 69ms (View: 2, DB: 0) | 200 OK [http://test.host/home]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:58:48) [GET]
+Rendering home/index
+Completed in 69ms (View: 1, DB: 0) | 200 OK [http://test.host/home]
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-09-05 22:59:07) [GET]
+Rendering home/index
+Completed in 69ms (View: 1, DB: 0) | 200 OK [http://test.host/home]

@@ -9,4 +9,5 @@ class HomeControllerTest < ActionController::TestCase
   test "the truth" do
       get :index
   end
+  
 end

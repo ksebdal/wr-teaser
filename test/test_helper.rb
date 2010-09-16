@@ -44,6 +44,7 @@ class ActiveSupport::TestCase
   end
 
   def mock_all_http_responses
-    mock_response(/moposite/,'wr_single.html')
+    mock_response(/records_elma_wrs/,'wr_single.html')
+    mock_response(/internal/,'eol_wrs_single.html')
   end
 end

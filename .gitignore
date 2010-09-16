@@ -1,0 +1,11 @@
+.DS_STORE
+.DS_Store
+*.swp
+log
+tmp
+db/*.sqlite3
+.rake_tasks
+coverage
+results
+*.iml
+.idea/

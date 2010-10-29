@@ -1,0 +1,6 @@
+rails --version 2.3.8
+curb --version 0.7.3
+json --version 1.4.3
+memcached-northscale
+nokogiri
+

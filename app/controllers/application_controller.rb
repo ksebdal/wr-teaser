@@ -16,11 +16,11 @@ class ApplicationController < ActionController::Base
   def single_wrs
     doc = curl('http://www.moposite.com/records_elma_wrs.php')
     parsed_doc = doc.xpath('//tr//td[@class = "wr"]|//tr//td[@class = "wrnew"]')
-    wr_table = Hash.new
+    wr_table = Array.new
     i = 0
     while ( i < (parsed_doc.length))
-      wr = Wr.new(parsed_doc[i+2].text, parsed_doc[i+1].text)
-      wr_table[parsed_doc[i].text.slice(0..1)] = wr
+      wr = Wr.new(parsed_doc[i].text.slice(0..1), parsed_doc[i+2].text, parsed_doc[i+1].text)
+      wr_table.push(wr)
       i += 3
     end
     wr_table
@@ -31,12 +31,7 @@ class ApplicationController < ActionController::Base
       wrs_table = Hash.new
       #doc.xpath('//td[@class = "list"][@width = 100]|//td[@class = "list"][@width = 22]|//td[@class = "list"]//a').each do |wrs|
       times = doc.xpath('//td[@class = "list"][@width = 100]')
-      puts times[1].text
       names_and_teams = doc.xpath('//td[@class = "list"]//a')
-      puts "list"
-      puts names_and_teams[1].text
-      #puts names_and_teams.size
-      #puts names_and_teams.to_s
       if (names_and_teams[1].text =~ /\[.?\]/)
         puts "ok"
       end

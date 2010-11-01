@@ -11,37 +11,21 @@ class ApplicationController < ActionController::Base
   def single_wrs
     response = Curl::Easy.perform('http://www.moposite.com/records_elma_wrs.php')
     doc = Nokogiri::HTML(response.body_str)
-    wrs_table = Hash.new
-    name = ''
-    level = ''
-    time = ''
-    element = 0
-    doc.xpath('//tr//td[@class = "wr"]|//tr//td[@class = "wrnew"]').each do |wrs|
-      if element % 3 == 0
-        level = wrs.text
-      elsif element % 3 == 1
-        time = wrs.text
-      elsif element % 3 == 2
-        name = wrs.text
-        wrs_table[level.slice(0..1)] = [name,time]
-      else
-        #throw fail
-      end 
-      element += 1
+    wr_table = Hash.new
+    parsed_doc = doc.xpath('//tr//td[@class = "wr"]|//tr//td[@class = "wrnew"]')
+    i = 0
+    while ( i < (parsed_doc.length))
+      # levelnr = {name, time}
+      wr_table[parsed_doc[i].text.slice(0..1)] = [parsed_doc[i+2].text,parsed_doc[i+1].text]
+      i = i + 3
     end
-    wrs_table
+    wr_table
   end
   
   def eol_single_wrs
       response = Curl::Easy.perform('http://elmaonline.moposite.com/?s=stats&p=internal')
       doc = Nokogiri::HTML(response.body_str)
       wrs_table = Hash.new
-      name = ''
-      team = ''
-      level = ''
-      time = ''
-      element = 0
-      allset = 0
       #doc.xpath('//td[@class = "list"][@width = 100]|//td[@class = "list"][@width = 22]|//td[@class = "list"]//a').each do |wrs|
       times = doc.xpath('//td[@class = "list"][@width = 100]')
       puts times[1].text

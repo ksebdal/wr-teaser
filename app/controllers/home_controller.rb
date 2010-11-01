@@ -19,7 +19,7 @@ class HomeController < ApplicationController
   def calculate_total(table)
     total = 0
     table.each do |key, value|
-      if value[1] =~ /([0-9]*)\:*([0-9][0-9]),([0-9][0-9])/
+      if value.time =~ /([0-9]*)\:*([0-9][0-9]),([0-9][0-9])/
         millis = ($3.to_i*10) + ($2.to_i*1000) + ($1.to_i*60*1000)
         total = total + millis
       end

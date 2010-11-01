@@ -15,9 +15,9 @@ class ApplicationController < ActionController::Base
     parsed_doc = doc.xpath('//tr//td[@class = "wr"]|//tr//td[@class = "wrnew"]')
     i = 0
     while ( i < (parsed_doc.length))
-      # levelnr = {name, time}
-      wr_table[parsed_doc[i].text.slice(0..1)] = [parsed_doc[i+2].text,parsed_doc[i+1].text]
-      i = i + 3
+      wr = Wr.new(parsed_doc[i+2].text, parsed_doc[i+1].text)
+      wr_table[parsed_doc[i].text.slice(0..1)] = wr
+      i += 3
     end
     wr_table
   end

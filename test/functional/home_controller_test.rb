@@ -8,6 +8,8 @@ class HomeControllerTest < ActionController::TestCase
 
   test "the truth" do
       get :index
+      assert_response :success
+      #assert_equal "text/html; charset=ISO-8859-1", @controller.headers["Content-Type"]
   end
 
 end

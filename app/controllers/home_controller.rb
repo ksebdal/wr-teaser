@@ -16,12 +16,12 @@ class HomeController < ApplicationController
     "#{minutes.to_s.rjust(2, '0')}:#{seconds.to_s.rjust(2, '0')},#{houndreds.to_s.rjust(2, '0')}"
   end
 
-  def calculate_total_in_milliseconds(table)
+  def calculate_total_in_milliseconds(wr_table)
     total = 0
-    table.each do |wr|
+    wr_table.each do |wr|
       if wr.time =~ /([0-9]*)\:*([0-9][0-9]),([0-9][0-9])/
         milliseconds = ($3.to_i*10) + ($2.to_i*1000) + ($1.to_i*60*1000)
-        total += milliseconds
+        total = total + milliseconds
       end
     end
     total

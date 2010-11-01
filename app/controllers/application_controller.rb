@@ -8,11 +8,15 @@ class ApplicationController < ActionController::Base
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
   
+  def curl(url)
+    response = Curl::Easy.perform(url)
+    Nokogiri::HTML(response.body_str)
+  end
+  
   def single_wrs
-    response = Curl::Easy.perform('http://www.moposite.com/records_elma_wrs.php')
-    doc = Nokogiri::HTML(response.body_str)
-    wr_table = Hash.new
+    doc = curl('http://www.moposite.com/records_elma_wrs.php')
     parsed_doc = doc.xpath('//tr//td[@class = "wr"]|//tr//td[@class = "wrnew"]')
+    wr_table = Hash.new
     i = 0
     while ( i < (parsed_doc.length))
       wr = Wr.new(parsed_doc[i+2].text, parsed_doc[i+1].text)
@@ -23,8 +27,7 @@ class ApplicationController < ActionController::Base
   end
   
   def eol_single_wrs
-      response = Curl::Easy.perform('http://elmaonline.moposite.com/?s=stats&p=internal')
-      doc = Nokogiri::HTML(response.body_str)
+      doc = curl('http://elmaonline.moposite.com/?s=stats&p=internal')
       wrs_table = Hash.new
       #doc.xpath('//td[@class = "list"][@width = 100]|//td[@class = "list"][@width = 22]|//td[@class = "list"]//a').each do |wrs|
       times = doc.xpath('//td[@class = "list"][@width = 100]')

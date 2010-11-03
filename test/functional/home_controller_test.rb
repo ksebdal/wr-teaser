@@ -6,10 +6,20 @@ class HomeControllerTest < ActionController::TestCase
      mock_all_http_responses
   end
 
-  test "the truth" do
-      get :index
-      assert_response :success
-      #assert_equal "text/html; charset=ISO-8859-1", @controller.headers["Content-Type"]
+  def get_index
+    get :index
+    assert_response :success
   end
-
+  
+  test "title should be set" do
+      get_index
+      assert_select "title", "wr-stat"
+  end
+  
+  test "total time should be set" do
+    get_index
+    assert_tag :tag => "p", :attributes => {:class=>"total"}
+    assert_equal "35:27,24", assigns(:total_str)
+  end
+  
 end

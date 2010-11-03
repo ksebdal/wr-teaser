@@ -6,10 +6,10 @@ class HomeController < ApplicationController
   def index
     single_table = single_wrs()
     milliseconds = calculate_total_in_milliseconds(single_table)
-    @total_str = format_milliseconds(milliseconds)
+    @total_str = format_milliseconds_to_time(milliseconds)
   end
 
-  def format_milliseconds(milliseconds)
+  def format_milliseconds_to_time(milliseconds)
     minutes = (milliseconds/60000).to_i
     seconds = ((milliseconds-minutes*60000)/1000).to_i
     houndreds = ((milliseconds-minutes*60000-seconds*1000)/10).to_i
@@ -17,14 +17,14 @@ class HomeController < ApplicationController
   end
 
   def calculate_total_in_milliseconds(wr_table)
-    total = 0
+    total_in_milliseconds = 0
     wr_table.each do |wr|
       if wr.time =~ /([0-9]*)\:*([0-9][0-9]),([0-9][0-9])/
         milliseconds = ($3.to_i*10) + ($2.to_i*1000) + ($1.to_i*60*1000)
-        total = total + milliseconds
+        total_in_milliseconds = total_in_milliseconds + milliseconds
       end
     end
-    total
+    total_in_milliseconds
   end
 
 end

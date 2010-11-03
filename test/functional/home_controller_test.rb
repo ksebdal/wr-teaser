@@ -19,7 +19,7 @@ class HomeControllerTest < ActionController::TestCase
   test "total time should be set" do
     get_index
     assert_tag :tag => "p", :attributes => {:class=>"total"}
-    assert_equal "35:27,24", assigns(:total_str)
+    assert_equal 2127240, assigns(:single_total) #35:27,55 something
   end
   
 end

@@ -5,15 +5,7 @@ class HomeController < ApplicationController
 
   def index
     single_table = single_wrs()
-    milliseconds = calculate_total_in_milliseconds(single_table)
-    @total_str = format_milliseconds_to_time(milliseconds)
-  end
-
-  def format_milliseconds_to_time(milliseconds)
-    minutes = (milliseconds/60000).to_i
-    seconds = ((milliseconds-minutes*60000)/1000).to_i
-    houndreds = ((milliseconds-minutes*60000-seconds*1000)/10).to_i
-    "#{minutes.to_s.rjust(2, '0')}:#{seconds.to_s.rjust(2, '0')},#{houndreds.to_s.rjust(2, '0')}"
+    @singles_total = calculate_total_in_milliseconds(single_table)
   end
 
   def calculate_total_in_milliseconds(wr_table)

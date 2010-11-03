@@ -6,7 +6,7 @@
     <link href="main.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <p class="total">#<%= @total_str %></p>
+    <p class="total">#<%= h format_milliseconds_to_time(@singles_total) %></p>
   </body>
 </html>
 

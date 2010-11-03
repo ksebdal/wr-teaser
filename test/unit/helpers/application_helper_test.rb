@@ -24,7 +24,7 @@ class ApplicationHelperTest < ActionView::TestCase
 
   test "positive values less then one hour should format" do
     assert_equal "01:00:00", format_milliseconds_to_time(60000)
-    assert_equal "59:59:99", format_milliseconds_to_time(60000*59+59999)
+    assert_equal "59:59:99", format_milliseconds_to_time(60000*60-1)
   end
   
   test "positive values more then one hour should format" do

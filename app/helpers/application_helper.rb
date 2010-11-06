@@ -1,12 +1,19 @@
 # Methods added to this helper will be available to all templates in the application.
 module ApplicationHelper
+  HOUNDRED = 10
+  SECOND = HOUNDRED*100
+  MINUTE = SECOND*60
+  HOUR = MINUTE*60
   def format_milliseconds_to_time(milliseconds)
     ret = ""
     if milliseconds >= 0
-      hours = (milliseconds/(60000*60)).to_i
-      minutes = ((milliseconds-hours*60*60000)/60000).to_i
-      seconds = ((milliseconds-hours*60*60000-minutes*60000)/1000).to_i
-      houndreds = ((milliseconds-hours*60*60000-minutes*60000-seconds*1000)/10).to_i
+      hours = (milliseconds/HOUR).to_i
+      hours_in_millis = hours*HOUR
+      minutes = ((milliseconds-hours_in_millis)/MINUTE).to_i
+      minutes_in_millis = minutes*MINUTE
+      seconds = ((milliseconds-hours_in_millis-minutes_in_millis)/SECOND).to_i
+      seconds_in_millis = seconds*SECOND
+      houndreds = ((milliseconds-hours_in_millis-minutes_in_millis-seconds_in_millis)/HOUNDRED).to_i
       if hours > 0
         ret += "#{hours.to_s}:"
       end
